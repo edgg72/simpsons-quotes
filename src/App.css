@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font: 1em sans-serif;
+  color: rgb(75, 73, 73);
+}
+
+.mainContainer::after {
+  content: "";
+  background: repeat url("./assets/simpsonsBackground.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.titleImage {
+  width: 30%;
+  min-width: 200px;
+  max-width: 500px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.searchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  width: 25%;
+  min-width: 208px;
+  max-width: 700px;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.quotesLabel {
+  font-weight: bold;
+}
+
+.stepInput {
+  width: 30px;
+  height: 20px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  margin-right: 1rem;
+}
+
+.searchButton {
+  cursor: pointer;
+  height: 35px;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgb(251 253 67);
+  border-radius: 8px;
+  font-weight: bold;
+  color: rgb(75, 73, 73);
+}
